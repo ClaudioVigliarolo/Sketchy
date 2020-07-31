@@ -58,7 +58,6 @@ import {
   toggleEraser,
   setBackground,
 } from "../utils/boardSettings";
-//@ts-ignore
 import ColorPicker from "@radial-color-picker/vue-color-picker";
 import VueSlider from "vue-slider-component";
 import "vue-slider-component/theme/default.css";

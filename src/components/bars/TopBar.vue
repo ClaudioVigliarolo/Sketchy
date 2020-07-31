@@ -128,8 +128,7 @@ export default class TopBar extends Vue {
     this.downloadModal = true;
     const link = document.createElement("a");
     link.download = this.title + ".png";
-    //@ts-ignore
-    link.href = document.getElementById("c").toDataURL();
+    link.href = (document.getElementById("c") as any).toDataURL();
     link.click();
     setTimeout(() => {
       this.downloadModal = false;

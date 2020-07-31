@@ -11,7 +11,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-//@ts-ignore
 import Vuesax from "vuesax";
 import Login from "../src/components/auth/Login.vue";
 import "vuesax/dist/vuesax.css"; //Vuesax styles

@@ -53,12 +53,12 @@ function inserted(el: any) {
     if (isEraser()) {
       ctx.globalCompositeOperation = 'destination-out';
       ctx.strokeStyle = 'rgba(255,255,255,1)';
-      ctx.lineWidth = getThickness() * 10;
+      ctx.lineWidth = getThickness() * 5;
     } else {
       ctx.globalCompositeOperation = 'source-over';
       ctx.strokeStyle = strokeStyle;
+      ctx.lineWidth = getThickness();
     }
-    ctx.lineWidth = getThickness();
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(offsetX, offsetY);
